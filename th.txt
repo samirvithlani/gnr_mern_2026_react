@@ -1,0 +1,20 @@
+npm create vite:
+npm: node package manager:
+
+
+NPM: -->node_modules-->build/dist --> packages --> .ts/.js --> function
+vite: tool:
+
+cd learning26 --> npm install
+
+
+react js we can create 2 typd of comp:
+class based comp
+function based comp 16.x function based componet:
+js 2 type function ,
+arrow function
+
+react js component creation rules:
+component name must Starts with cap Header valid header -> not valid, Users,UserDetail
+
+fw | lib <--> df 
