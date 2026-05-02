@@ -18,3 +18,22 @@ react js component creation rules:
 component name must Starts with cap Header valid header -> not valid, Users,UserDetail
 
 fw | lib <--> df 
+
+{} -->object error
+boolean -> print
+
+array:
+
+array : const a =[10,20,30]
+{
+    a[0]
+}
+{
+    a[1]
+}
+--->
+{
+    for()***
+}
+
+//forEach -->void ->cant return
