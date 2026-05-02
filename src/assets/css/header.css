@@ -1,0 +1,10 @@
+.header{
+    background-color: chocolate;
+    color: white;
+    font-weight: bold;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    position: sticky;
+}

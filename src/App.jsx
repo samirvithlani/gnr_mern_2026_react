@@ -4,7 +4,6 @@ import viteLogo from "/vite.svg";
 import {Header} from "./components/Header" //export const
 import Footer from "./components/Footer" //export default
 import { Content } from "./components/Content";
-
 //import "./App.css";
 
 

@@ -9,9 +9,10 @@ export const Content = () => {
         id:1,name:"amit",age:23
       }
       
+      const contentStyle ={textAlign:"center"}
       
   return (
-    <div>
+    <div style={contentStyle}>
           
       <h1>HELLO</h1>
       <h2>At a time we can return only 1 element</h2>
