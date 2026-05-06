@@ -51,3 +51,166 @@ var students = [
   { id: 9, name: "Arjun", age: 24, hobbies: ["basketball", "music"], marks: 67, gender: "male" },
   { id: 10, name: "Anjali", age: 23, hobbies: ["photography", "travel"], marks: 89, gender: "female" }
 ];
+
+[
+  {
+    "id": 1,
+    "teamName": "Punjab Kings",
+    "shortName": "PBKS",
+    "captain": "Shreyas Iyer",
+    "homeGround": "PCA Stadium",
+    "trophies": 0,
+    "points": 13,
+    "runRate": 0.855,
+    "wins": 6,
+    "loss": 2,
+    "lastMatchDate": "2026-05-03",
+    "topPlayers": ["Shreyas Iyer", "Arshdeep Singh", "Livingstone"],
+    "players": ["Shreyas Iyer", "Arshdeep Singh", "Livingstone", "Rabada", "Prabhsimran"]
+  },
+  {
+    "id": 2,
+    "teamName": "Royal Challengers Bengaluru",
+    "shortName": "RCB",
+    "captain": "Rajat Patidar",
+    "homeGround": "M. Chinnaswamy Stadium",
+    "trophies": 1,
+    "points": 12,
+    "runRate": 1.420,
+    "wins": 6,
+    "loss": 3,
+    "lastMatchDate": "2026-04-30",
+    "topPlayers": ["Virat Kohli", "Phil Salt", "Josh Hazlewood"],
+    "players": ["Virat Kohli", "Phil Salt", "Rajat Patidar", "Hazlewood", "Livingstone"]
+  },
+  {
+    "id": 3,
+    "teamName": "Sunrisers Hyderabad",
+    "shortName": "SRH",
+    "captain": "Pat Cummins",
+    "homeGround": "Rajiv Gandhi Stadium",
+    "trophies": 1,
+    "points": 12,
+    "runRate": 0.832,
+    "wins": 6,
+    "loss": 3,
+    "lastMatchDate": "2026-05-03",
+    "topPlayers": ["Travis Head", "Abhishek Sharma", "Cummins"],
+    "players": ["Head", "Abhishek", "Cummins", "Klaasen", "Nitish Reddy"]
+  },
+  {
+    "id": 4,
+    "teamName": "Rajasthan Royals",
+    "shortName": "RR",
+    "captain": "Sanju Samson",
+    "homeGround": "Sawai Mansingh Stadium",
+    "trophies": 1,
+    "points": 12,
+    "runRate": 0.510,
+    "wins": 6,
+    "loss": 4,
+    "lastMatchDate": "2026-05-01",
+    "topPlayers": ["Sanju Samson", "Jaiswal", "Boult"],
+    "players": ["Sanju", "Jaiswal", "Parag", "Boult", "Chahal"]
+  },
+  {
+    "id": 5,
+    "teamName": "Gujarat Titans",
+    "shortName": "GT",
+    "captain": "Shubman Gill",
+    "homeGround": "Narendra Modi Stadium",
+    "trophies": 1,
+    "points": 10,
+    "runRate": -0.192,
+    "wins": 5,
+    "loss": 4,
+    "lastMatchDate": "2026-04-30",
+    "topPlayers": ["Shubman Gill", "Buttler", "Rashid Khan"],
+    "players": ["Gill", "Buttler", "Rashid", "Sai Sudharsan", "Holder"]
+  },
+  {
+    "id": 6,
+    "teamName": "Chennai Super Kings",
+    "shortName": "CSK",
+    "captain": "Ruturaj Gaikwad",
+    "homeGround": "Chepauk",
+    "trophies": 5,
+    "points": 8,
+    "runRate": 0.005,
+    "wins": 4,
+    "loss": 5,
+    "lastMatchDate": "2026-05-06",
+    "topPlayers": ["Sanju Samson", "Ruturaj", "Jadeja"],
+    "players": ["Dhoni", "Ruturaj", "Jadeja", "Pathirana", "Dube"]
+  },
+  {
+    "id": 7,
+    "teamName": "Delhi Capitals",
+    "shortName": "DC",
+    "captain": "KL Rahul",
+    "homeGround": "Arun Jaitley Stadium",
+    "trophies": 0,
+    "points": 8,
+    "runRate": -0.895,
+    "wins": 4,
+    "loss": 5,
+    "lastMatchDate": "2026-05-06",
+    "topPlayers": ["KL Rahul", "Stubbs", "Kuldeep Yadav"],
+    "players": ["KL Rahul", "Stubbs", "Kuldeep", "Fraser McGurk", "Axar"]
+  },
+  {
+    "id": 8,
+    "teamName": "Kolkata Knight Riders",
+    "shortName": "KKR",
+    "captain": "Shreyas Iyer",
+    "homeGround": "Eden Gardens",
+    "trophies": 3,
+    "points": 7,
+    "runRate": -0.539,
+    "wins": 3,
+    "loss": 5,
+    "lastMatchDate": "2026-05-03",
+    "topPlayers": ["Russell", "Sunil Narine", "Rinku Singh"],
+    "players": ["Russell", "Narine", "Rinku", "Salt", "Harshit Rana"]
+  },
+  {
+    "id": 9,
+    "teamName": "Mumbai Indians",
+    "shortName": "MI",
+    "captain": "Hardik Pandya",
+    "homeGround": "Wankhede Stadium",
+    "trophies": 5,
+    "points": 6,
+    "runRate": -0.649,
+    "wins": 3,
+    "loss": 7,
+    "lastMatchDate": "2026-05-04",
+    "topPlayers": ["Bumrah", "Rohit Sharma", "SKY"],
+    "players": ["Rohit", "Hardik", "Bumrah", "SKY", "Tilak Varma"]
+  },
+  {
+    "id": 10,
+    "teamName": "Lucknow Super Giants",
+    "shortName": "LSG",
+    "captain": "KL Rahul",
+    "homeGround": "Ekana Stadium",
+    "trophies": 0,
+    "points": 4,
+    "runRate": -1.076,
+    "wins": 2,
+    "loss": 7,
+    "lastMatchDate": "2026-05-04",
+    "topPlayers": ["Nicholas Pooran", "Mayank Yadav", "Stoinis"],
+    "players": ["Pooran", "Stoinis", "Mayank", "KL Rahul", "Bishnoi"]
+  }
+]
+
+
+
+Show all teams in cards using .map()
+If runRate < 0 then text color should become red.
+Show trophy emoji 🏆 only if won trophy eveer
+Create a “Top 4 Qualified” section: wins>6
+Show “Playoff Chances High” badge if: points >= 14
+
+
