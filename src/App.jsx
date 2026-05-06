@@ -7,6 +7,7 @@ import { Content } from "./components/Content";
 import { MapDemo1 } from "./components/MapDemo1";
 import { MapDemo2 } from "./components/MapDemo2";
 import { MaoDemo3 } from "./components/MaoDemo3";
+import { MapDemo3 } from "./components/MapDemo3";
 //import "./App.css";
 
 
@@ -17,7 +18,8 @@ function App() {
     <div>
       <Header></Header>
       {/* <MapDemo2></MapDemo2> */}
-      <MaoDemo3></MaoDemo3>
+      {/* <MaoDemo3></MaoDemo3> */}
+      <MapDemo3></MapDemo3>
       {/* <MapDemo1></MapDemo1> */}
       {/* <Content></Content>
       <Footer></Footer> */}

@@ -37,3 +37,17 @@ array : const a =[10,20,30]
 }
 
 //forEach -->void ->cant return
+//Map
+
+var students = [
+  { id: 1, name: "Amit", age: 23, hobbies: ["reading", "dancing"], marks: 23, gender: "male" },
+  { id: 2, name: "Priya", age: 22, hobbies: ["painting", "music"], marks: 78, gender: "female" },
+  { id: 3, name: "Rahul", age: 24, hobbies: ["cricket", "gaming"], marks: 65, gender: "male" },
+  { id: 4, name: "Sneha", age: 21, hobbies: ["writing", "yoga"], marks: 88, gender: "female" },
+  { id: 5, name: "Karan", age: 23, hobbies: ["football", "gym"], marks: 55, gender: "male" },
+  { id: 6, name: "Neha", age: 22, hobbies: ["dance", "travel"], marks: 91, gender: "female" },
+  { id: 7, name: "Rohit", age: 25, hobbies: ["movies", "coding"], marks: 72, gender: "male" },
+  { id: 8, name: "Pooja", age: 21, hobbies: ["singing", "reading"], marks: 84, gender: "female" },
+  { id: 9, name: "Arjun", age: 24, hobbies: ["basketball", "music"], marks: 67, gender: "male" },
+  { id: 10, name: "Anjali", age: 23, hobbies: ["photography", "travel"], marks: 89, gender: "female" }
+];
