@@ -213,4 +213,16 @@ Show trophy emoji 🏆 only if won trophy eveer
 Create a “Top 4 Qualified” section: wins>6
 Show “Playoff Chances High” badge if: points >= 14
 
+React Routing:
+index.html
+HTML <a href ="url">
+Component URL:
+react router dom 3rd party package:
 
+npm i react-router-dom
+
+<BrowserRouter> :- it enable routing in react application --> main.jsx
+<Routes> : to hold all route 
+ <Route> : to creat url for component
+
+all are components

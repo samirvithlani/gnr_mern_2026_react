@@ -8,6 +8,10 @@ import { MapDemo1 } from "./components/MapDemo1";
 import { MapDemo2 } from "./components/MapDemo2";
 import { MaoDemo3 } from "./components/MaoDemo3";
 import { MapDemo3 } from "./components/MapDemo3";
+import { Route, Routes } from "react-router-dom";
+import { NetflixShows } from "./components/Netflix/NetflixShows";
+import { NetflixMovies } from "./components/Netflix/NetflixMovies";
+import { Navbar } from "./components/Navbar";
 //import "./App.css";
 
 
@@ -16,13 +20,11 @@ function App() {
 
   return (
     <div>
-      <Header></Header>
-      {/* <MapDemo2></MapDemo2> */}
-      {/* <MaoDemo3></MaoDemo3> */}
-      <MapDemo3></MapDemo3>
-      {/* <MapDemo1></MapDemo1> */}
-      {/* <Content></Content>
-      <Footer></Footer> */}
+      <Navbar></Navbar>
+          <Routes>
+              <Route path="/netflixshows" element ={<NetflixShows/>}></Route>
+              <Route path="/movies" element = {<NetflixMovies/>}></Route>
+          </Routes>
     </div>
   );
 }
