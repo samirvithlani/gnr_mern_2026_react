@@ -12,6 +12,8 @@ import { Route, Routes } from "react-router-dom";
 import { NetflixShows } from "./components/Netflix/NetflixShows";
 import { NetflixMovies } from "./components/Netflix/NetflixMovies";
 import { Navbar } from "./components/Navbar";
+import { Watch } from "./components/Netflix/Watch";
+import { Error404 } from "./components/Error404";
 //import "./App.css";
 
 
@@ -22,8 +24,11 @@ function App() {
     <div>
       <Navbar></Navbar>
           <Routes>
+            <Route path="/" element ={<MapDemo2/>}></Route>
               <Route path="/netflixshows" element ={<NetflixShows/>}></Route>
               <Route path="/movies" element = {<NetflixMovies/>}></Route>
+              <Route path="/watch/:name" element = {<Watch/>}></Route>
+              <Route path="/*" element = {<Error404/>}></Route>
           </Routes>
     </div>
   );
