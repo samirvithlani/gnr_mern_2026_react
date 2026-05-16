@@ -14,6 +14,8 @@ import { NetflixMovies } from "./components/Netflix/NetflixMovies";
 import { Navbar } from "./components/Navbar";
 import { Watch } from "./components/Netflix/Watch";
 import { Error404 } from "./components/Error404";
+import { Teams } from "./components/ipl/Teams";
+import { TeamDetail } from "./components/ipl/TeamDetail";
 //import "./App.css";
 
 
@@ -24,10 +26,12 @@ function App() {
     <div>
       <Navbar></Navbar>
           <Routes>
-            <Route path="/" element ={<MapDemo2/>}></Route>
+              <Route path="/" element ={<MapDemo2/>}></Route>
               <Route path="/netflixshows" element ={<NetflixShows/>}></Route>
               <Route path="/movies" element = {<NetflixMovies/>}></Route>
               <Route path="/watch/:name" element = {<Watch/>}></Route>
+              <Route path="/teams" element= {<Teams/>}></Route>
+              <Route path="/teamdetail/:id" element = {<TeamDetail/>}></Route>
               <Route path="/*" element = {<Error404/>}></Route>
           </Routes>
     </div>
