@@ -226,3 +226,18 @@ npm i react-router-dom
  <Route> : to creat url for component
 
 all are components
+
+
+--->Students[c] --> 10 20 student ---> {rollno,name}
+-->StudentResult[c] -->{rollno,name,marks:[{maths:20,sci:20,eng:20}]}
+result -->
+
+roll no:
+studentName
+
+subject   obtainmarks   Grade
+--         20            A 
+--         20            A 
+--         21            B
+
+total     61            A
