@@ -3,10 +3,14 @@ import { Link } from 'react-router-dom'
 import { MyButton } from '../MyButton'
 
 export const NetflixMovies = () => {
+
+  const testMovies  =(name)=>{
+    alert("Name = "+name)
+  }
   return (
     <div style={{textAlign:"center"}}>
         <h1>NetflixMovies</h1>
-        <MyButton></MyButton>
+        <MyButton funName ={()=>{testMovies("aaaaaa")}}></MyButton>
         <ul>
           <li>
             <Link to="/watch/dhurandhar">Dhurandhar</Link>

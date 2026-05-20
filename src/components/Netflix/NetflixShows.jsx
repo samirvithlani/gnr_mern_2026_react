@@ -11,10 +11,14 @@ export const NetflixShows = () => {
     {id:4,name:"Mirzapur"}
   ]
 
+  const showTest = ()=>{
+    alert("show test called..")
+  }
+
   return (
     <div style={{textAlign:"center"}}>
         <h1>NetflixShows</h1>
-        <MyButton name="show" bgcolor="red"></MyButton>
+        <MyButton funName={showTest} name="show" bgcolor="red"></MyButton>
 
         {
           showList.map((show)=>{

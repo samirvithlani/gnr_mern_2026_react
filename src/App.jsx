@@ -17,6 +17,7 @@ import { Error404 } from "./components/Error404";
 import { Teams } from "./components/ipl/Teams";
 import { TeamDetail } from "./components/ipl/TeamDetail";
 import { Students } from "./components/Students";
+import { FuncCallDemo } from "./components/FuncCallDemo";
 //import "./App.css";
 
 
@@ -34,6 +35,7 @@ function App() {
               <Route path="/teams" element= {<Teams/>}></Route>
               <Route path="/teamdetail/:id" element = {<TeamDetail/>}></Route>
               <Route path="/students" element ={<Students/>}></Route>
+              <Route path="/funcall" element ={<FuncCallDemo/>}></Route>
               <Route path="/*" element = {<Error404/>}></Route>
           </Routes>
     </div>
