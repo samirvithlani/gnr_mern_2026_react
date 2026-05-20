@@ -241,3 +241,28 @@ subject   obtainmarks   Grade
 --         21            B
 
 total     61            A
+
+
+commuincation between component:
+1 -->comp --->2 comp --->
+Parent  --> Child --> Inheritance
+
+
+we have 3 ways:
+props -->properties
+Context --
+redux -->state managament tool
+
+Parent compoentn ->child --->props use
+props is immutable(read only)
+
+Students -->P
+StudentList -->C
+
+
+
+
+
+
+
+
