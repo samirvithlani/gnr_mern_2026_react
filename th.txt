@@ -259,6 +259,8 @@ props is immutable(read only)
 Students -->P
 StudentList -->C
 
+How to create reusbale compoennt
+
 
 
 

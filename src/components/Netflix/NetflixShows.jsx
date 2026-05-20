@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MyButton } from '../MyButton'
 
 export const NetflixShows = () => {
 
@@ -13,6 +14,8 @@ export const NetflixShows = () => {
   return (
     <div style={{textAlign:"center"}}>
         <h1>NetflixShows</h1>
+        <MyButton name="show" bgcolor="red"></MyButton>
+
         {
           showList.map((show)=>{
             return <li>
