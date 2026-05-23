@@ -263,7 +263,13 @@ How to create reusbale compoennt
 
 
 
+1 comp
+table
+id name age email
 
+2 comp
+table
+id name salary post leaves
 
 
 

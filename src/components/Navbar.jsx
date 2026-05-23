@@ -47,6 +47,17 @@ export const Navbar = () => {
                 funcall
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/table">
+                table
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/table2">
+                table 2
+              </Link>
+            </li>
+            
             
             
           </ul>

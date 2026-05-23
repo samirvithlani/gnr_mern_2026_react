@@ -18,6 +18,8 @@ import { Teams } from "./components/ipl/Teams";
 import { TeamDetail } from "./components/ipl/TeamDetail";
 import { Students } from "./components/Students";
 import { FuncCallDemo } from "./components/FuncCallDemo";
+import { TableDemo } from "./components/TableDemo";
+import { TableDemo2 } from "./components/TableDemo2";
 //import "./App.css";
 
 
@@ -36,6 +38,8 @@ function App() {
               <Route path="/teamdetail/:id" element = {<TeamDetail/>}></Route>
               <Route path="/students" element ={<Students/>}></Route>
               <Route path="/funcall" element ={<FuncCallDemo/>}></Route>
+              <Route path="/table" element = {<TableDemo/>}></Route>
+              <Route path="/table2" element = {<TableDemo2/>}></Route>
               <Route path="/*" element = {<Error404/>}></Route>
           </Routes>
     </div>
