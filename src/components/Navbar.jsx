@@ -57,6 +57,22 @@ export const Navbar = () => {
                 table 2
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/useStateDemo1">
+                useStateDemo1
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/useStateDemo2">
+                useStateDemo2
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/useStateDemo3">
+                useStateDemo3
+              </Link>
+            </li>
+            
             
             
             

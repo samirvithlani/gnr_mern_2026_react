@@ -272,5 +272,28 @@ table
 id name salary post leaves
 
 
+react hooks:
+its builtin ot 3rd parth udf life cycle function
+all hooks name starts with use
+useState
+
+
+DOM:HTML
+
+
+
+--->js --> html --> Dom manup:
+
+dom m: -->documnet -->full object update..
+
+1000 --> 2 line ---> 1002 line
+dom costly
+reactjs -->DOM -->copy -->Virtual-DOM
+change -->v-dom --->compare -->update
+V-dom --> document
+
+
+
+
 
 

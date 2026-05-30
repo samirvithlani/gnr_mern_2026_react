@@ -20,6 +20,9 @@ import { Students } from "./components/Students";
 import { FuncCallDemo } from "./components/FuncCallDemo";
 import { TableDemo } from "./components/TableDemo";
 import { TableDemo2 } from "./components/TableDemo2";
+import { UseStateDemo1 } from "./components/UseStateDemo1";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
+import { UseStatedemo3 } from "./components/UseStatedemo3";
 //import "./App.css";
 
 
@@ -41,6 +44,9 @@ function App() {
               <Route path="/table" element = {<TableDemo/>}></Route>
               <Route path="/table2" element = {<TableDemo2/>}></Route>
               <Route path="/*" element = {<Error404/>}></Route>
+              <Route path="/useStateDemo1" element ={<UseStateDemo1/>}></Route>
+              <Route path="/useStateDemo2" element ={<UseStateDemo2/>}></Route>
+              <Route path="/useStateDemo3" element ={<UseStatedemo3/>}></Route>
           </Routes>
     </div>
   );
