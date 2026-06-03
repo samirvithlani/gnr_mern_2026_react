@@ -5,6 +5,7 @@ export const InputDemo1 = () => {
     const [email, setemail] = useState("")
     const [age, setage] = useState("")
     const [isClicked, setisClicked] = useState(false)
+    const [color, setcolor] = useState("")
 
     const nameHandler = (event)=>{
         console.log(event)
@@ -31,10 +32,18 @@ export const InputDemo1 = () => {
             <input type='text' onChange={(event)=>{setage(event.target.value)}}></input>
             {/* {age} */}
         </div>
+        <div>
+            <label>COLOR</label>
+            <input type='color' onChange={(event)=>{setcolor(event.target.value)}}></input>
+        </div>
+        <div>
+            <label>DATE</label>
+            <input type='date'></input>
+        </div>
         <button onClick={()=>{setisClicked(true)}}>SUBMIT</button>
         
         {
-            isClicked == true && <div>
+            isClicked == true && <div style={{color:color}}>
             <h1>OUTPUT</h1>
             <h1>Name = {name}</h1>
             <h2>Age = {age}</h2>

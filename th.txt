@@ -294,6 +294,14 @@ V-dom --> document
 
 
 
+selelct -->dropdown
+array -->country and state
+[select coutry] -->India
+[select state] -->india state
+
+try:
+
+
 
 
 
