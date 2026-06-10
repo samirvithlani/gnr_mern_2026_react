@@ -83,6 +83,12 @@ export const Navbar = () => {
               </Link>
             </li>
             
+            <li class="nav-item">
+              <Link class="nav-link" to="/inputdemo3">
+                inputdemo3
+              </Link>
+            </li>
+            
             
             
             

@@ -312,3 +312,18 @@ try:
 40
 50!=50
 
+
+radio button :
+fashion,electronic
+
+data= array =
+
+[] --> tshirt
+[] -->
+[]>
+[]>
+
+mobile
+tc
+laptop
+
