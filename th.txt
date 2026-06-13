@@ -330,3 +330,17 @@ laptop
 
 
 password validator:
+
+form handling:
+react-hook-form :
+formik
+
+npm i react-hook-form
+
+handlesubmit = (cb)=>{
+
+  //register manage.. {}
+  cb({})
+
+
+}
