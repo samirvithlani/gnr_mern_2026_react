@@ -344,3 +344,32 @@ handlesubmit = (cb)=>{
 
 
 }
+
+react hook form validation
+
+required
+min
+max
+minLength
+maxLength
+validate
+pattern
+
+
+{
+  required:
+  {
+    value:true,
+    message:"name is required*"
+    }
+}
+{
+            required:{
+                value:true,
+                message:"age is required"
+            }
+}
+
+?. --> optional op:
+
+if name is not undefined then it will message variable
