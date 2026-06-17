@@ -2,7 +2,8 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 
 export const FormDemo3 = () => {
-    const {register,handleSubmit,formState:{errors}} = useForm()
+    //all,onSubmit,onChange,onBlur
+    const {register,handleSubmit,formState:{errors}} = useForm({mode:"all"})
     const refcodelist = ["insta","fb","google","paper"]
     const submitHandler  =(data)=>{
         alert("form subbmited..")
@@ -27,6 +28,12 @@ export const FormDemo3 = () => {
                 value:true,
                 message:"skill is required*"
             }
+        },
+        contactValidator:{
+            pattern:{
+                value:/[6-9]{1}[0-9]{9}$/,
+                message:"invalid phone no"
+            }
         }
     }
     console.log(errors)
@@ -46,6 +53,11 @@ export const FormDemo3 = () => {
                 js : <input type='checkbox' value="js" {...register("skills",validationSchema.skillValidator)}></input>
                 python : <input type='checkbox' value="python" {...register("skills",validationSchema.skillValidator)}></input>
                 <span style={{color:"red"}}>{errors.skills?.message}</span>
+            </div>
+            <div>
+                <label>Contact</label>
+                <input type='text' {...register("contact",validationSchema.contactValidator)}></input>
+                {errors.contact?.message}
             </div>
             <div>
                 <input type='submit'></input>
