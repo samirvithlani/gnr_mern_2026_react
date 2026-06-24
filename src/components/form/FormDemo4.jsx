@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 export const FormDemo4 = () => {
 
-  const{register,handleSubmit,formState:{errors},watch}=useForm({mode:"onChange"})
+  const{register,handleSubmit,formState:{errors},watch}=useForm({mode:"onChange",defaultValues:{password:"test"}})
   const password = watch("password")
   
   const submitHandler = (data)=>{
