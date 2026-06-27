@@ -118,6 +118,12 @@ export const Navbar = () => {
                 formdemo6
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/apidemo1">
+                apidemo1
+              </Link>
+            </li>
+            
             
             
             

@@ -2,7 +2,7 @@ import React from 'react'
 import { useFieldArray, useForm } from 'react-hook-form'
 
 export const FormDemo6 = () => {
-    const{register,handleSubmit,control}= useForm({defaultValues:{"medicine":[{name:"",dosage:0,freq:0}]}})
+    const{register,handleSubmit,control,trigger,formState:{errors}}= useForm({defaultValues:{"medicine":[{name:"",dosage:0,freq:0}]}})
 
     const {fields,append,remove} = useFieldArray({name:"medicine",control})
     //fileds:array --> {defaultValues:{"medicine":[{name:"",dosage:0,freq:0}]}}
@@ -21,7 +21,8 @@ export const FormDemo6 = () => {
                             return <div>
                                 
                                     <label>NAME</label>
-                                    <input type='text' {...register(`medicine.${index}.name`)}></input>
+                                    <input type='text' {...register(`medicine.${index}.name`,{required:{value:true,message:"name is required"}})}></input>
+                                    {errors.medicine?.[index]?.name?.message}
                                 
                                 
                                     <label>DOSAGE</label>
@@ -39,7 +40,18 @@ export const FormDemo6 = () => {
                     </div>    
             </form>
             
-            <button onClick={()=>{append([{name:"",dosage:0,freq:0}])}}>ADD MORE</button>
+            <button
+            type="button"
+        onClick={async () => {
+            const valid = await trigger("medicine");
+
+            if(valid){
+                append({name:"",dosage:0,freq:0});
+        }
+    }}
+>
+    ADD MORE
+</button>
 
     </div>
   )

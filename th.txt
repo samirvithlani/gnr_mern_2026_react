@@ -373,3 +373,40 @@ pattern
 ?. --> optional op:
 
 if name is not undefined then it will message variable
+
+API: application programming interface:
+bef:java,python,js,php,.net,homeGround
+   :uniform:URL
+fef:reacr android, angular
+
+web service:API
+XML ->SOAP API:
+JSON ->Rest api
+
+
+React we are consumer of api
+CRUD : url ---> operation
+request method: url :
+BE
+---------------------------------
+GET  :to fetch data from backend
+POST :
+PUT  : update
+DELETE: delete
+PATCH :partial update
+
+<---->
+Fetch function <---> axios
+npm i axios
+
+
+line1
+line2 -->2 api
+  Promise --> then catch async await:
+line3 -->
+
+
+URL: https://node5.onrender.com/user/user/
+GET:
+
+
