@@ -410,3 +410,13 @@ URL: https://node5.onrender.com/user/user/
 GET:
 
 
+USEEFFECT:
+useEffect -->react
+
+to handle side effect in react js we can use use effect
+lifecyele hook
+
+
+
+
+
