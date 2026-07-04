@@ -6,8 +6,8 @@ export const ApiDemo3 = () => {
   const [movieName, setmovieName] = useState("")
   const getMovie = async () => {
     const res = await axios.get(
-      //`http://www.omdbapi.com/?apikey=add your key&s=Avatar`,
-      `http://www.omdbapi.com/?apikey=add your key&s=${movieName}`,
+      //`http://www.omdbapi.com/?apikey=&s=Avatar`,
+      `http://www.omdbapi.com/?apikey=&s=${movieName}`,
     );
     console.log(res); //axios object
     console.log(res.data); //api response

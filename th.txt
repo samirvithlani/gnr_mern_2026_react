@@ -417,6 +417,19 @@ to handle side effect in react js we can use use effect
 lifecyele hook
 
 
+button on every card [detail]
+<Link>
+detail button  : /movieDetail/imbddb
+
+MovieDetail : useParans() 
+get imdbid
+
+movieDETAIL com --> imdbid is there
+
+api call
+http://www.omdbapi.com/?apikey=[yourkey]&i=imdbid
+
+
 
 
 
