@@ -430,6 +430,16 @@ api call
 http://www.omdbapi.com/?apikey=[yourkey]&i=imdbid
 
 
+URL: https://node5.onrender.com/user/user/
+POST:
+JSON {}
+name:string
+email:string
+password:string
+age:number
+isActive
+
+
 
 
 

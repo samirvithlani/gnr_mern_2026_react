@@ -37,6 +37,7 @@ import { UseEffectDemo } from "./components/UseEffectDemo";
 import { Bounce, ToastContainer } from "react-toastify";
 import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { ApiDemo3 } from "./components/api/ApiDemo3";
+import { ApiDemo4 } from "./components/api/ApiDemo4";
 //import "./App.css";
 
 function App() {
@@ -83,6 +84,8 @@ function App() {
         <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
         <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
         <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
+        <Route path="/apidemo4" element={<ApiDemo4 />}></Route>
+
         <Route path="/useEffectDemo" element={<UseEffectDemo />}></Route>
       </Routes>
     </div>
