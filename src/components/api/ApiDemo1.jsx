@@ -2,12 +2,15 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Loader } from '../Loader'
 import { toast } from 'react-toastify'
+import { Modal } from 'react-bootstrap'
 
 export const ApiDemo1 = () => {
 
     const [message, setmessage] = useState("")
     const [users, setusers] = useState([])
     const [loading, setloading] = useState(false)
+    const [show, setshow] = useState(false)
+    const [singleUser, setsingleUser] = useState({})
 
     const getUsers = async()=>{
 
@@ -31,6 +34,16 @@ export const ApiDemo1 = () => {
             toast.success("user deleted !!")
             getUsers()
         }
+    }
+    const userDetail =async(id)=>{
+        const res = await axios.get(`https://node5.onrender.com/user/user/${id}`)
+        console.log("res of single user",res.data)
+        setsingleUser(res.data.data)
+        setshow(true)
+    }
+
+    const handleClose =()=>{
+        setshow(false)
     }
 
     useEffect(()=>{
@@ -66,12 +79,21 @@ export const ApiDemo1 = () => {
                             <td>{u.age}</td>
                             <td>
                                 <button onClick={()=>{deleteUser(u._id)}} className='btn btn-danger'>DELETE</button>
+                                <button onClick={()=>{userDetail(u._id)}} className='btn btn-primary'>DETAIL</button>
+
                             </td>
                         </tr>
                     })
                 }
             </tbody>
         </table>
+        <Modal show={show} onHide={handleClose}>
+               <Modal.Body>USER DETAIL
+                <h1>NAME = {singleUser.name}</h1>
+                <h2>EMAIL = {singleUser.email}</h2>
+                <h3>AGE = {singleUser.age}</h3>
+                </Modal.Body>     
+        </Modal>
     </div>
   )
 }

@@ -440,6 +440,20 @@ age:number
 isActive
 
 
+POST :https://node5.onrender.com/product/create
+     :
+     {
+      "colors": [],
+      "isAvailable": true,
+      "unit": 0,
+      "name": "ipad mini",
+      "price": 20000,
+      "description": "Na levai",
+      
+    }, 
+GET : https://node5.onrender.com/product/getall
+
+
 
 
 
