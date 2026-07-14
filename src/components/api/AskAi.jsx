@@ -10,7 +10,7 @@ export const AskAi = () => {
         setisLoading(true)
         const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=add your key"
         const res  = await axios.post(url,{
-            contents:[{parts:{text:`${prompt} \n you are expert mail reader find this mail is spam or not, and if not describw what it is give me summery and highlights`}}]
+            contents:[{parts:{text:`${prompt} \n you are compiler ingore syntex mistake and give out put and explintaion of code`}}]
         })
         console.log(res.data.candidates[0]?.content?.parts[0]?.text)
         if(res.status==200){

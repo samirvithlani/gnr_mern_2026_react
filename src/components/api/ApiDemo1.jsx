@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { Loader } from '../Loader'
 import { toast } from 'react-toastify'
 import { Modal } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export const ApiDemo1 = () => {
 
@@ -80,7 +81,7 @@ export const ApiDemo1 = () => {
                             <td>
                                 <button onClick={()=>{deleteUser(u._id)}} className='btn btn-danger'>DELETE</button>
                                 <button onClick={()=>{userDetail(u._id)}} className='btn btn-primary'>DETAIL</button>
-
+                                <Link to={`/updateuser2/${u._id}`} className='btn btn-warning'>UPDATE</Link>
                             </td>
                         </tr>
                     })
