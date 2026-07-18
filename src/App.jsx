@@ -42,6 +42,7 @@ import { ApiDemo5 } from "./components/api/ApiDemo5";
 import { AskAi } from "./components/api/AskAi";
 import { UpdateUser } from "./components/api/UpdateUser";
 import { UpdateUser2 } from "./components/api/UpdatUser2";
+import { FindBomb } from "./components/FindBomb";
 //import "./App.css";
 
 function App() {
@@ -93,6 +94,8 @@ function App() {
         <Route path="/askai" element ={<AskAi/>}></Route>
         <Route path="/updateuser/:id" element = {<UpdateUser/>}></Route>
         <Route path="/updateuser2/:id" element = {<UpdateUser2/>}></Route>
+        <Route path="/findbomb" element = {<FindBomb/>}></Route>
+
 
         <Route path="/useEffectDemo" element={<UseEffectDemo />}></Route>
       </Routes>

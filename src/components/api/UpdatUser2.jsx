@@ -1,11 +1,14 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 
 export const UpdateUser2 = () => {
 
     const id = useParams().id
+    const user = useLocation().state; //optinal when you want to do with state obj
+    console.log("state user",user)
+    //const {register,handleSubmit,formState:{errors},setValue}=useForm({defaultValues:user})
     const {register,handleSubmit,formState:{errors},setValue}=useForm()
     
     const getUserById = async()=>{
@@ -18,7 +21,7 @@ export const UpdateUser2 = () => {
     }
 
     useEffect(()=>{
-            getUserById()
+            //getUserById()
     },[])
 
     const submitHandler = async(data)=>{
