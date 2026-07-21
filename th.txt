@@ -453,7 +453,20 @@ POST :https://node5.onrender.com/product/create
     }, 
 GET : https://node5.onrender.com/product/getall
 
+GET:https://node5.onrender.com/item
 
-update: component --> form --> old data form fill
+url :https://node5.onrender.com/item
+params : no
+headers: "Authoriation":"Bearer token"
+
+
+Login: 
+
+POST : https://node5.onrender.com/user/login
+-d : {"email":"","password":""}
+
+-->token
+--> localstorage store
+
 
 
